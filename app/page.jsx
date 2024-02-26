@@ -29,8 +29,8 @@ export default function Home() {
       </header>
       <main className="w-full flex justify-center">
         <div className="mt-8 max-w-7xl grid grid-cols-6 justify-center gap-3 max-xl:grid-cols-4 max-md:grid-cols-2 max-sm:grid-cols-1">
-        {data.map((product) =>(
-          <div className="bg-white w-full">
+        {data.map((product,index) =>(
+          <div className="bg-white w-full" key={index}>
           <div className="w-full flex flex-col items-center bg-white">
             <img src={product.thumnail} alt={product.category} srcset="" />
             <div  className="bg-white w-full flex flex-col gap-2 pb-4">
