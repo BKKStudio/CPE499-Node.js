@@ -5,7 +5,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "CPE499-NODE.JS",
-  description: "CPE499-NODE.JS",
+  description: "CPE499-NODE.JS 6400502 Seksak Aranchot",
 };
 
 export default function RootLayout({ children }) {

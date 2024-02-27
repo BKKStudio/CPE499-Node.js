@@ -31,14 +31,15 @@ export default function Home() {
         <div className="mt-8 max-w-7xl grid grid-cols-6 justify-center gap-3 max-xl:grid-cols-4 max-md:grid-cols-2 max-sm:grid-cols-1">
         {data.map((product,index) =>(
           <div className="bg-white w-full" key={index}>
-          <div className="w-full flex flex-col items-center bg-white">
+          <div className="w-full flex flex-col h-full relative">
             <img src={product.thumnail} alt={product.category} srcset="" />
-            <div  className="bg-white w-full flex flex-col gap-2 pb-4">
-             <span className="text-center text-xs px-2">
+            <div className="bg-red-700 p-0.5 absolute  text-xs text-white mt-2 px-1">Mall</div>
+            <div  className="bg-white w-full flex flex-col justify-end gap-2 pb-4 ">
+             <div className="text-center text-xs px-2  w-full h-12">
               {product.product}
-             </span>
-             <span className="px-2 text-orange-600">฿{product.price}</span>
-             <span className="px-2 text-sm text-gray-500">จังหวัด{product.province}</span>
+             </div>
+             <div className="px-2 text-orange-600">฿{product.price}</div>
+             <div className="px-2 text-sm text-gray-500 ">จังหวัด{product.province}</div>
            </div>
           </div>
         </div>
